@@ -15,7 +15,7 @@ button.onclick = function() {
         }
     }
     
-    request.open('Get',"http://enileda.imad.hasura-app.io/counter", true);
+    request.open('Get','http://enileda.imad.hasura-app.io/counter', true);
     request.send(null);
 }
 
@@ -44,7 +44,7 @@ submit.onclick = function (req, res) {
     }
     var name = nameInput.value;
 
-    request.open('Get',"http://enileda.imad.hasura-app.io/submit-name?name=" + name, true);
+    request.open('Get','http://enileda.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
     
 
