@@ -4,8 +4,8 @@ button.onclick = function() {
     var request = new XMLHttpRequest();
     
     request.onreadystatechange = function() {
-        if (request.readystate == XMLHttpRequest.DONE) {
-            //if (request.status == 200) 
+        if (request.readystate === XMLHttpRequest.DONE) {
+            //if (request.status === 200) 
             {
                 var counter = request.responseText;
                 counter = counter + 1;
@@ -29,8 +29,8 @@ submit.onclick = function (req, res) {
      var request = new XMLHttpRequest();
     
     request.onreadystatechange = function() {
-        if (request.readystate == XMLHttpRequest.DONE) {
-            if (request.status == 200) {
+        if (request.readystate === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
                 var names = request.responseText;
                 names = JSON.parse(names);
                 var list ='';
