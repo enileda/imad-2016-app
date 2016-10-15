@@ -114,7 +114,8 @@ app.get('/adeline.html', function (req, res) {
 
 var names = [];
 app.get('/submit-name.html', function (req, res) {
-    var name = req.Query.name;
+    // var name = req.Query.name;
+    var name = 'Adeline';
 
     names.push(name);
     
